@@ -1,0 +1,121 @@
+DEBUG 2018-04-10 11:23:41,977 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-10 11:23:42,005 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2018-04-10 11:23:42,035 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.Web.Host.Startup.CashTestWebHostModule, CashTest.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 11:23:42,038 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestWebCoreModule, CashTest.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 11:23:42,038 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestApplicationModule, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 11:23:42,039 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestCoreModule, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 11:23:42,039 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 11:23:42,040 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 11:23:42,040 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 11:23:42,040 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 11:23:42,041 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.EntityFrameworkCore.CashTestEntityFrameworkModule, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 11:23:42,041 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 11:23:42,041 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 11:23:42,041 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 11:23:42,041 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 11:23:42,042 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 11:23:42,042 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 11:23:42,045 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2018-04-10 11:23:42,109 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 11:23:42,109 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 11:23:42,109 [1    ] o.Configuration.LanguageManagementConfig - Converted CashTest (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 11:23:42,109 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 11:23:42,426 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: CashTest.EntityFrameworkCore.CashTestDbContext, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 11:23:42,794 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-10 11:23:42,832 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-10 11:23:42,866 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-10 11:23:42,884 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CashTest
+DEBUG 2018-04-10 11:23:42,906 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-10 11:23:42,932 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-10 11:23:42,967 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2018-04-10 11:23:42,967 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-04-10 11:23:42,970 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.CreateUserDto
+DEBUG 2018-04-10 11:23:42,971 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.UserDto
+DEBUG 2018-04-10 11:23:42,971 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-10 11:23:42,971 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-10 11:23:42,971 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-10 11:23:42,971 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.PermissionDto
+DEBUG 2018-04-10 11:23:42,971 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.RoleDto
+DEBUG 2018-04-10 11:23:42,971 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-10 11:23:42,971 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.TenantDto
+INFO  2018-04-10 11:23:45,062 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2018-04-10 11:23:45,908 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CashTest.Web.Host.Controllers.HomeController.Index (CashTest.Web.Host) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-10 11:23:45,949 [6    ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2018-04-10 11:23:45,953 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Web.Host.Controllers.HomeController.Index (CashTest.Web.Host) in 246.7245ms
+INFO  2018-04-10 11:23:45,961 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 928.7557ms 302 
+INFO  2018-04-10 11:23:45,966 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2018-04-10 11:23:45,974 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.3831ms 301 
+INFO  2018-04-10 11:23:45,980 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/  
+INFO  2018-04-10 11:23:45,989 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/index.html'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:45,995 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15.6922ms 200 text/html
+INFO  2018-04-10 11:23:46,008 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/typography.css  
+INFO  2018-04-10 11:23:46,011 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/typography.css'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,013 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.0215ms 200 text/css
+INFO  2018-04-10 11:23:46,020 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/reset.css  
+INFO  2018-04-10 11:23:46,021 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/reset.css'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,022 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/screen.css  
+INFO  2018-04-10 11:23:46,023 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.2036ms 200 text/css
+INFO  2018-04-10 11:23:46,023 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/object-assign-pollyfill.js  
+INFO  2018-04-10 11:23:46,024 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/screen.css'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,025 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.8384ms 200 text/css
+INFO  2018-04-10 11:23:46,025 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.slideto.min.js  
+INFO  2018-04-10 11:23:46,025 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.wiggle.min.js  
+INFO  2018-04-10 11:23:46,026 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.slideto.min.js'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,026 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.wiggle.min.js'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,026 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.6281ms 200 application/javascript
+INFO  2018-04-10 11:23:46,026 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery-1.8.0.min.js  
+INFO  2018-04-10 11:23:46,027 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.6944ms 200 application/javascript
+INFO  2018-04-10 11:23:46,027 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-1.8.0.min.js'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,029 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/object-assign-pollyfill.js'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,030 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.5689ms 200 application/javascript
+INFO  2018-04-10 11:23:46,034 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.9328ms 200 application/javascript
+INFO  2018-04-10 11:23:46,042 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/lodash.min.js  
+INFO  2018-04-10 11:23:46,042 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/backbone-min.js  
+INFO  2018-04-10 11:23:46,043 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/lodash.min.js'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,043 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/backbone-min.js'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,044 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.3166ms 200 application/javascript
+INFO  2018-04-10 11:23:46,044 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.3329ms 200 application/javascript
+INFO  2018-04-10 11:23:46,044 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.ba-bbq.min.js  
+INFO  2018-04-10 11:23:46,046 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.ba-bbq.min.js'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,053 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.8869ms 200 application/javascript
+INFO  2018-04-10 11:23:46,071 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.min.js  
+INFO  2018-04-10 11:23:46,073 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.min.js'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,074 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/handlebars-4.0.5.js  
+INFO  2018-04-10 11:23:46,077 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/handlebars-4.0.5.js'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,079 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.9099ms 200 application/javascript
+INFO  2018-04-10 11:23:46,080 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack_extended.js  
+INFO  2018-04-10 11:23:46,081 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/highlight.9.1.0.pack_extended.js'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,081 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.4289ms 200 application/javascript
+INFO  2018-04-10 11:23:46,081 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.77ms 200 application/javascript
+INFO  2018-04-10 11:23:46,084 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jsoneditor.min.js  
+INFO  2018-04-10 11:23:46,084 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/marked.js  
+INFO  2018-04-10 11:23:46,085 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/marked.js'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,085 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jsoneditor.min.js'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,085 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.2216ms 200 application/javascript
+INFO  2018-04-10 11:23:46,086 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack.js  
+INFO  2018-04-10 11:23:46,087 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/highlight.9.1.0.pack.js'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,088 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.1174ms 200 application/javascript
+INFO  2018-04-10 11:23:46,088 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.0328ms 200 application/javascript
+INFO  2018-04-10 11:23:46,112 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/swagger-oauth.js  
+INFO  2018-04-10 11:23:46,113 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/swagger-oauth.js'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,114 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.0576ms 200 application/javascript
+INFO  2018-04-10 11:23:46,141 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/logo_small.png  
+INFO  2018-04-10 11:23:46,142 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/logo_small.png'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,143 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.8807ms 200 image/png
+INFO  2018-04-10 11:23:46,227 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/print.css  
+INFO  2018-04-10 11:23:46,229 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/print.css'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:46,229 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.3878ms 200 text/css
+INFO  2018-04-10 11:23:46,432 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2018-04-10 11:23:46,673 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 241.0493ms 200 application/json
+INFO  2018-04-10 11:23:47,122 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/on-complete.js?_=1523330627118  
+INFO  2018-04-10 11:23:47,122 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js?_=1523330627117  
+INFO  2018-04-10 11:23:47,122 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/on-complete.js'. Physical path: 'D:\github\CashTest\aspnet-core\src\CashTest.Web.Host\wwwroot\swagger\ui\on-complete.js'
+INFO  2018-04-10 11:23:47,122 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\github\CashTest\aspnet-core\src\CashTest.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2018-04-10 11:23:47,123 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.8564ms 200 application/javascript
+INFO  2018-04-10 11:23:47,124 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.6219ms 200 application/javascript
+INFO  2018-04-10 11:23:47,188 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/favicon-32x32.png  
+INFO  2018-04-10 11:23:47,188 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:47,189 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.1468ms 200 image/png
+INFO  2018-04-10 11:23:47,195 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/favicon-16x16.png  
+INFO  2018-04-10 11:23:47,196 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/favicon-16x16.png'. Physical path: 'N/A'
+INFO  2018-04-10 11:23:47,196 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.3138ms 200 image/png
