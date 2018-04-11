@@ -11,25 +11,22 @@ using Abp.Zero.Configuration;
 using CashTest.Authentication.JwtBearer;
 using CashTest.Configuration;
 using CashTest.EntityFrameworkCore;
-
 #if FEATURE_SIGNALR
 using Abp.Web.SignalR;
 #elif FEATURE_SIGNALR_ASPNETCORE
 using Abp.AspNetCore.SignalR;
+
 #endif
 
 namespace CashTest
 {
-    [DependsOn(
-         typeof(CashTestApplicationModule),
-         typeof(CashTestEntityFrameworkModule),
-         typeof(AbpAspNetCoreModule)
-#if FEATURE_SIGNALR 
+    [DependsOn(typeof(CashTestApplicationModule), typeof(CashTestEntityFrameworkModule), typeof(AbpAspNetCoreModule)
+#if FEATURE_SIGNALR
         ,typeof(AbpWebSignalRModule)
 #elif FEATURE_SIGNALR_ASPNETCORE
-        ,typeof(AbpAspNetCoreSignalRModule)
+        , typeof(AbpAspNetCoreSignalRModule)
 #endif
-     )]
+    )]
     public class CashTestWebCoreModule : AbpModule
     {
         private readonly IHostingEnvironment _env;
@@ -51,11 +48,13 @@ namespace CashTest
             Configuration.Modules.Zero().LanguageManagement.EnableDbLocalization();
 
             Configuration.Modules.AbpAspNetCore()
-                 .CreateControllersForAppServices(
-                     typeof(CashTestApplicationModule).GetAssembly()
-                 );
+                .CreateControllersForAppServices(
+                    typeof(CashTestApplicationModule).GetAssembly()
+                );
 
             ConfigureTokenAuth();
+
+            Configuration.MultiTenancy.IsEnabled = true;
         }
 
         private void ConfigureTokenAuth()
@@ -63,10 +62,13 @@ namespace CashTest
             IocManager.Register<TokenAuthConfiguration>();
             var tokenAuthConfig = IocManager.Resolve<TokenAuthConfiguration>();
 
-            tokenAuthConfig.SecurityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_appConfiguration["Authentication:JwtBearer:SecurityKey"]));
+            tokenAuthConfig.SecurityKey =
+                new SymmetricSecurityKey(
+                    Encoding.ASCII.GetBytes(_appConfiguration["Authentication:JwtBearer:SecurityKey"]));
             tokenAuthConfig.Issuer = _appConfiguration["Authentication:JwtBearer:Issuer"];
             tokenAuthConfig.Audience = _appConfiguration["Authentication:JwtBearer:Audience"];
-            tokenAuthConfig.SigningCredentials = new SigningCredentials(tokenAuthConfig.SecurityKey, SecurityAlgorithms.HmacSha256);
+            tokenAuthConfig.SigningCredentials =
+                new SigningCredentials(tokenAuthConfig.SecurityKey, SecurityAlgorithms.HmacSha256);
             tokenAuthConfig.Expiration = TimeSpan.FromDays(1);
         }
 

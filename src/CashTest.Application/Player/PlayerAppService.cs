@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Abp.Domain.Repositories;
+using Abp.Runtime.Caching;
+using Abp.Runtime.Session;
 using Abp.UI;
 using AutoMapper;
 using CashTest.IRepositories;
@@ -16,15 +18,23 @@ namespace CashTest.Player
     {
         private readonly IPlayerRepository _playeRepository;
 
+        public IAbpSession Session { get; set; }
+
+        public ICacheManager CacheManager { get; set; }
+
         public PlayerAppService(IPlayerRepository playeRepository)
         {
             _playeRepository = playeRepository;
+            Session = NullAbpSession.Instance;
         }
 
         public GetPlayersOutput GetPlayers(GetPlayerInput input)
         {
             Logger.Info($" get player input :: {JsonConvert.SerializeObject(input)}");
             Logger.Info($" get player input :: {input}");
+            Logger.Warn($"session :: {JsonConvert.SerializeObject(Session)}");
+
+
 
 
             if (!string.IsNullOrEmpty(input.PlayerName))
@@ -57,11 +67,18 @@ namespace CashTest.Player
             throw new UserFriendlyException("input error");
         }
 
+        private Entities.Player GetPlayerFromDb(long id)
+        {
+            return _playeRepository.Get(id);
+        }
+
         public void UpdatePlayer(PlayerInput input)
         {
             Logger.Info($" update a playe for input {input}");
 
-            var playerEntity = _playeRepository.Get(input.PlayerID);
+            var playerEntity = CacheManager.GetCache("player").Get(input.PlayerID, () => GetPlayerFromDb(input.PlayerID));
+            
+            //var playerEntity = _playeRepository.Get(input.PlayerID);
             if (playerEntity == null)
             {
                 throw new UserFriendlyException("player not exist");

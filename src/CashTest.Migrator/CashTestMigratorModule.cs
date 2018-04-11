@@ -1,3 +1,4 @@
+using Abp.AutoMapper;
 using Microsoft.Extensions.Configuration;
 using Castle.MicroKernel.Registration;
 using Abp.Events.Bus;
@@ -5,6 +6,7 @@ using Abp.Modules;
 using Abp.Reflection.Extensions;
 using CashTest.Configuration;
 using CashTest.EntityFrameworkCore;
+using CashTest.Extensions;
 using CashTest.Migrator.DependencyInjection;
 
 namespace CashTest.Migrator
@@ -21,6 +23,9 @@ namespace CashTest.Migrator
             _appConfiguration = AppConfigurations.Get(
                 typeof(CashTestMigratorModule).GetAssembly().GetDirectoryPathOrNull()
             );
+
+            Configuration.Modules.MyModule().SampleConfig1 = false;
+            Configuration.Modules.MyModule().SampleConfig2 = "cash";
         }
 
         public override void PreInitialize()

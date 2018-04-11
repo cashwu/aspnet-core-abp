@@ -21,5 +21,6 @@ namespace CashTest.Entities
             CreationTime = DateTime.Now;
             MapID = 1;
         }
+
     }
 }
