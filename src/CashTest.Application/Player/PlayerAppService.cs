@@ -8,6 +8,7 @@ using AutoMapper;
 using CashTest.IRepositories;
 using CashTest.Player.Dto;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 
 namespace CashTest.Player
 {
@@ -20,9 +21,12 @@ namespace CashTest.Player
             _playeRepository = playeRepository;
         }
 
-
         public GetPlayersOutput GetPlayers(GetPlayerInput input)
         {
+            Logger.Info($" get player input :: {JsonConvert.SerializeObject(input)}");
+            Logger.Info($" get player input :: {input}");
+
+
             if (!string.IsNullOrEmpty(input.PlayerName))
             {
                 var playerEntityList = _playeRepository.GetAllList(a => a.PlayerName.Contains(input.PlayerName));
@@ -73,7 +77,7 @@ namespace CashTest.Player
                 playerEntity.MapID = input.MapID;
             }
 
-            _playeRepository.Update(playerEntity);
+            //_playeRepository.Update(playerEntity);
         }
 
         public void CreatePlayer(PlayerInput input)

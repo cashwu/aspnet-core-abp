@@ -44,5 +44,10 @@ namespace CashTest
         {
             IocManager.Resolve<AppTimes>().StartupTime = Clock.Now;
         }
+
+        public override void Shutdown()
+        {
+            Logger.Info(" Shutdown!! ");
+        }
     }
 }
