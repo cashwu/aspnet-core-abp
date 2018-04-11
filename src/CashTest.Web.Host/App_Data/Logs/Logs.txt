@@ -311,3 +311,776 @@ PlayerID
 INFO  2018-04-11 09:33:51,115 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
 INFO  2018-04-11 09:33:51,116 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) in 133.2445ms
 INFO  2018-04-11 09:33:51,116 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 139.3373ms 500 application/json; charset=utf-8
+DEBUG 2018-04-11 09:44:01,973 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-11 09:44:01,997 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2018-04-11 09:44:02,026 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.Web.Host.Startup.CashTestWebHostModule, CashTest.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:44:02,029 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestWebCoreModule, CashTest.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:44:02,029 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestApplicationModule, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:44:02,030 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestCoreModule, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:44:02,030 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:44:02,030 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:44:02,030 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:44:02,031 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:44:02,031 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.EntityFrameworkCore.CashTestEntityFrameworkModule, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:44:02,031 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:44:02,031 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:44:02,032 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:44:02,032 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:44:02,032 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:44:02,032 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:44:02,035 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2018-04-11 09:44:02,099 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:44:02,099 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:44:02,099 [1    ] o.Configuration.LanguageManagementConfig - Converted CashTest (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:44:02,099 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:44:02,430 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: CashTest.EntityFrameworkCore.CashTestDbContext, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:44:02,844 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-11 09:44:02,882 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-11 09:44:02,916 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-11 09:44:02,934 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CashTest
+DEBUG 2018-04-11 09:44:02,956 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-11 09:44:02,982 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-11 09:44:03,018 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2018-04-11 09:44:03,018 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-04-11 09:44:03,020 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.CreateUserDto
+DEBUG 2018-04-11 09:44:03,021 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.UserDto
+DEBUG 2018-04-11 09:44:03,021 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-11 09:44:03,021 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-11 09:44:03,021 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-11 09:44:03,021 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.PermissionDto
+DEBUG 2018-04-11 09:44:03,021 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.RoleDto
+DEBUG 2018-04-11 09:44:03,021 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-11 09:44:03,021 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.TenantDto
+INFO  2018-04-11 09:44:05,977 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Player/GetPlayers?mapid=1  
+INFO  2018-04-11 09:44:06,777 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) with arguments (CashTest.Player.Dto.GetPlayerInput) - ModelState is Valid
+ERROR 2018-04-11 09:44:06,917 [5    ] Mvc.ExceptionHandling.AbpExceptionFilter - Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[CashTest.Entities.Player, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[CashTest.Player.Dto.PlayerDto, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[CashTest.Entities.Player, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[CashTest.Player.Dto.PlayerDto, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+==========================================================
+Player -> PlayerDto (Destination member list)
+CashTest.Entities.Player -> CashTest.Player.Dto.PlayerDto (Destination member list)
+
+Unmapped properties:
+PlayerID
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at CashTest.Player.PlayerAppService.GetPlayers(GetPlayerInput input) in D:\github\CashTest\aspnet-core\src\CashTest.Application\Player\PlayerAppService.cs:line 38
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+INFO  2018-04-11 09:44:06,996 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-11 09:44:07,016 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) in 405.6718ms
+INFO  2018-04-11 09:44:07,021 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1061.8473ms 500 application/json; charset=utf-8
+DEBUG 2018-04-11 09:46:57,349 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-11 09:46:57,377 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2018-04-11 09:46:57,408 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.Web.Host.Startup.CashTestWebHostModule, CashTest.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:46:57,411 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestWebCoreModule, CashTest.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:46:57,411 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestApplicationModule, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:46:57,411 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestCoreModule, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:46:57,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:46:57,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:46:57,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:46:57,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:46:57,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.EntityFrameworkCore.CashTestEntityFrameworkModule, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:46:57,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:46:57,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:46:57,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:46:57,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:46:57,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:46:57,414 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:46:57,418 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2018-04-11 09:46:57,488 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:46:57,488 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:46:57,488 [1    ] o.Configuration.LanguageManagementConfig - Converted CashTest (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:46:57,488 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:46:57,791 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: CashTest.EntityFrameworkCore.CashTestDbContext, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:46:58,194 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-11 09:46:58,235 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-11 09:46:58,269 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-11 09:46:58,288 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CashTest
+DEBUG 2018-04-11 09:46:58,310 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-11 09:46:58,338 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-11 09:46:58,373 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2018-04-11 09:46:58,374 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-04-11 09:46:58,376 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.CreateUserDto
+DEBUG 2018-04-11 09:46:58,377 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.UserDto
+DEBUG 2018-04-11 09:46:58,377 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-11 09:46:58,377 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-11 09:46:58,377 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-11 09:46:58,377 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.PermissionDto
+DEBUG 2018-04-11 09:46:58,377 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.RoleDto
+DEBUG 2018-04-11 09:46:58,378 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-11 09:46:58,378 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.TenantDto
+INFO  2018-04-11 09:47:00,082 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Player/GetPlayers?mapid=1  
+INFO  2018-04-11 09:47:00,844 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) with arguments (CashTest.Player.Dto.GetPlayerInput) - ModelState is Valid
+ERROR 2018-04-11 09:47:00,966 [11   ] Mvc.ExceptionHandling.AbpExceptionFilter - Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[CashTest.Entities.Player, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[CashTest.Player.Dto.PlayerDto, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[CashTest.Entities.Player, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[CashTest.Player.Dto.PlayerDto, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+==========================================================
+Player -> PlayerDto (Destination member list)
+CashTest.Entities.Player -> CashTest.Player.Dto.PlayerDto (Destination member list)
+
+Unmapped properties:
+PlayerID
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at CashTest.Player.PlayerAppService.GetPlayers(GetPlayerInput input) in D:\github\CashTest\aspnet-core\src\CashTest.Application\Player\PlayerAppService.cs:line 38
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+INFO  2018-04-11 09:47:01,043 [11   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-11 09:47:01,062 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) in 378.6854ms
+INFO  2018-04-11 09:47:01,067 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1003.9833ms 500 application/json; charset=utf-8
+DEBUG 2018-04-11 09:47:34,921 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-11 09:47:34,945 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2018-04-11 09:47:34,975 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.Web.Host.Startup.CashTestWebHostModule, CashTest.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:47:34,977 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestWebCoreModule, CashTest.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:47:34,978 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestApplicationModule, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:47:34,978 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestCoreModule, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:47:34,978 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:47:34,978 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:47:34,979 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:47:34,979 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:47:34,979 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.EntityFrameworkCore.CashTestEntityFrameworkModule, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:47:34,979 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:47:34,980 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:47:34,980 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:47:34,980 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:47:34,980 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:47:34,981 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:47:34,983 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2018-04-11 09:47:35,048 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:47:35,048 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:47:35,048 [1    ] o.Configuration.LanguageManagementConfig - Converted CashTest (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:47:35,048 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:47:35,379 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: CashTest.EntityFrameworkCore.CashTestDbContext, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:47:35,787 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-11 09:47:35,828 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-11 09:47:35,864 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-11 09:47:35,882 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CashTest
+DEBUG 2018-04-11 09:47:35,906 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-11 09:47:35,933 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-11 09:47:35,969 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2018-04-11 09:47:35,969 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-04-11 09:47:35,972 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.CreateUserDto
+DEBUG 2018-04-11 09:47:35,973 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.UserDto
+DEBUG 2018-04-11 09:47:35,973 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-11 09:47:35,973 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-11 09:47:35,973 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-11 09:47:35,973 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.PermissionDto
+DEBUG 2018-04-11 09:47:35,973 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.RoleDto
+DEBUG 2018-04-11 09:47:35,973 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-11 09:47:35,973 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.TenantDto
+INFO  2018-04-11 09:47:37,673 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Player/GetPlayers?mapid=1  
+INFO  2018-04-11 09:47:38,467 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) with arguments (CashTest.Player.Dto.GetPlayerInput) - ModelState is Valid
+ERROR 2018-04-11 09:47:38,593 [5    ] Mvc.ExceptionHandling.AbpExceptionFilter - Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[CashTest.Entities.Player, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[CashTest.Player.Dto.PlayerDto, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[CashTest.Entities.Player, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[CashTest.Player.Dto.PlayerDto, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+==========================================================
+Player -> PlayerDto (Destination member list)
+CashTest.Entities.Player -> CashTest.Player.Dto.PlayerDto (Destination member list)
+
+Unmapped properties:
+PlayerID
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at CashTest.Player.PlayerAppService.GetPlayers(GetPlayerInput input) in D:\github\CashTest\aspnet-core\src\CashTest.Application\Player\PlayerAppService.cs:line 38
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+INFO  2018-04-11 09:47:38,668 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-11 09:47:38,688 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) in 382.1505ms
+INFO  2018-04-11 09:47:38,692 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1039.2226ms 500 application/json; charset=utf-8
+DEBUG 2018-04-11 09:51:03,797 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-11 09:51:03,970 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2018-04-11 09:51:04,003 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.Web.Host.Startup.CashTestWebHostModule, CashTest.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:51:04,006 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestWebCoreModule, CashTest.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:51:04,006 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestApplicationModule, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:51:04,007 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestCoreModule, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:51:04,007 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:51:04,007 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:51:04,007 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:51:04,008 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:51:04,008 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.EntityFrameworkCore.CashTestEntityFrameworkModule, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:51:04,008 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:51:04,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:51:04,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:51:04,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:51:04,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:51:04,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:51:04,012 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2018-04-11 09:51:04,103 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:51:04,103 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:51:04,103 [1    ] o.Configuration.LanguageManagementConfig - Converted CashTest (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:51:04,103 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:51:04,499 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: CashTest.EntityFrameworkCore.CashTestDbContext, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:51:05,297 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-11 09:51:05,345 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-11 09:51:05,380 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-11 09:51:05,400 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CashTest
+DEBUG 2018-04-11 09:51:05,424 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-11 09:51:05,561 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-11 09:51:05,600 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2018-04-11 09:51:05,600 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-04-11 09:51:05,603 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.CreateUserDto
+DEBUG 2018-04-11 09:51:05,603 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.UserDto
+DEBUG 2018-04-11 09:51:05,603 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-11 09:51:05,603 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-11 09:51:05,603 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-11 09:51:05,603 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.PermissionDto
+DEBUG 2018-04-11 09:51:05,604 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.RoleDto
+DEBUG 2018-04-11 09:51:05,604 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-11 09:51:05,604 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.TenantDto
+INFO  2018-04-11 09:51:08,507 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2018-04-11 09:51:11,495 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CashTest.Web.Host.Controllers.HomeController.Index (CashTest.Web.Host) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-11 09:51:11,605 [11   ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2018-04-11 09:51:11,632 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Web.Host.Controllers.HomeController.Index (CashTest.Web.Host) in 794.732ms
+INFO  2018-04-11 09:51:11,665 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3189.93ms 302 
+INFO  2018-04-11 09:51:11,697 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/  
+INFO  2018-04-11 09:51:11,740 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/index.html'. Physical path: 'N/A'
+INFO  2018-04-11 09:51:11,751 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 73.2498ms 200 text/html
+INFO  2018-04-11 09:51:11,781 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/typography.css  
+INFO  2018-04-11 09:51:11,865 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/screen.css  
+INFO  2018-04-11 09:51:11,895 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/object-assign-pollyfill.js  
+INFO  2018-04-11 09:51:11,908 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/reset.css  
+INFO  2018-04-11 09:51:11,940 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery-1.8.0.min.js  
+INFO  2018-04-11 09:51:11,941 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/reset.css was not modified
+INFO  2018-04-11 09:51:11,964 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/screen.css was not modified
+INFO  2018-04-11 09:51:12,037 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 182.4594ms 304 text/css
+INFO  2018-04-11 09:51:12,039 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-1.8.0.min.js was not modified
+INFO  2018-04-11 09:51:12,067 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.slideto.min.js  
+INFO  2018-04-11 09:51:12,068 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/typography.css was not modified
+INFO  2018-04-11 09:51:12,099 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 303.0007ms 304 text/css
+INFO  2018-04-11 09:51:12,188 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 173.6647ms 304 application/javascript
+INFO  2018-04-11 09:51:12,210 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/object-assign-pollyfill.js was not modified
+INFO  2018-04-11 09:51:12,238 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.slideto.min.js was not modified
+INFO  2018-04-11 09:51:12,314 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 433.3593ms 304 application/javascript
+INFO  2018-04-11 09:51:12,359 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 182.1915ms 304 text/css
+INFO  2018-04-11 09:51:12,361 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 382.5396ms 304 application/javascript
+INFO  2018-04-11 09:51:12,427 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/lodash.min.js  
+INFO  2018-04-11 09:51:12,452 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.ba-bbq.min.js  
+INFO  2018-04-11 09:51:12,477 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.min.js  
+INFO  2018-04-11 09:51:12,514 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.min.js was not modified
+INFO  2018-04-11 09:51:12,542 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.wiggle.min.js  
+INFO  2018-04-11 09:51:12,543 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/handlebars-4.0.5.js  
+INFO  2018-04-11 09:51:12,546 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.ba-bbq.min.js was not modified
+INFO  2018-04-11 09:51:12,616 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.wiggle.min.js was not modified
+INFO  2018-04-11 09:51:12,645 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/backbone-min.js  
+INFO  2018-04-11 09:51:12,667 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 177.7015ms 304 application/javascript
+INFO  2018-04-11 09:51:12,690 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 377.3988ms 304 application/javascript
+INFO  2018-04-11 09:51:12,712 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/lodash.min.js was not modified
+INFO  2018-04-11 09:51:12,736 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 162.9272ms 304 application/javascript
+INFO  2018-04-11 09:51:12,803 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 589.7756ms 304 application/javascript
+INFO  2018-04-11 09:51:12,892 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/handlebars-4.0.5.js was not modified
+INFO  2018-04-11 09:51:12,893 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack_extended.js  
+INFO  2018-04-11 09:51:12,918 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 579.4375ms 304 application/javascript
+INFO  2018-04-11 09:51:12,961 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/marked.js  
+INFO  2018-04-11 09:51:12,964 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack.js  
+INFO  2018-04-11 09:51:13,010 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/marked.js was not modified
+INFO  2018-04-11 09:51:13,012 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/backbone-min.js was not modified
+INFO  2018-04-11 09:51:13,079 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/swagger-oauth.js  
+INFO  2018-04-11 09:51:13,081 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jsoneditor.min.js  
+INFO  2018-04-11 09:51:13,105 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 583.0863ms 304 application/javascript
+INFO  2018-04-11 09:51:13,128 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/highlight.9.1.0.pack_extended.js was not modified
+INFO  2018-04-11 09:51:13,132 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 165.7415ms 304 application/javascript
+INFO  2018-04-11 09:51:13,157 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/highlight.9.1.0.pack.js was not modified
+INFO  2018-04-11 09:51:13,162 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 420.924ms 304 application/javascript
+INFO  2018-04-11 09:51:13,168 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/swagger-oauth.js was not modified
+INFO  2018-04-11 09:51:13,215 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 228.7433ms 304 application/javascript
+INFO  2018-04-11 09:51:13,220 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/logo_small.png  
+INFO  2018-04-11 09:51:13,223 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /images/logo_small.png was not modified
+INFO  2018-04-11 09:51:13,229 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.6835ms 304 image/png
+INFO  2018-04-11 09:51:13,252 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 346.3924ms 304 application/javascript
+INFO  2018-04-11 09:51:13,276 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jsoneditor.min.js was not modified
+INFO  2018-04-11 09:51:13,325 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 429.9943ms 304 application/javascript
+INFO  2018-04-11 09:51:13,326 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/print.css  
+INFO  2018-04-11 09:51:13,353 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2018-04-11 09:51:13,360 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/print.css was not modified
+INFO  2018-04-11 09:51:13,371 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 131.5842ms 304 text/css
+INFO  2018-04-11 09:51:13,626 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 292.2447ms 200 application/json
+INFO  2018-04-11 09:51:14,053 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js?_=1523411474002  
+INFO  2018-04-11 09:51:14,055 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/on-complete.js?_=1523411474003  
+INFO  2018-04-11 09:51:14,104 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/on-complete.js'. Physical path: 'D:\github\CashTest\aspnet-core\src\CashTest.Web.Host\wwwroot\swagger\ui\on-complete.js'
+INFO  2018-04-11 09:51:14,106 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\github\CashTest\aspnet-core\src\CashTest.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2018-04-11 09:51:14,179 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 126.4102ms 200 application/javascript
+INFO  2018-04-11 09:51:14,181 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 126.4128ms 200 application/javascript
+INFO  2018-04-11 09:51:25,777 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Player/GetPlayers?mapid=1  
+INFO  2018-04-11 09:51:26,248 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) with arguments (CashTest.Player.Dto.GetPlayerInput) - ModelState is Valid
+DEBUG 2018-04-11 09:54:45,049 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-11 09:54:45,073 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2018-04-11 09:54:45,101 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.Web.Host.Startup.CashTestWebHostModule, CashTest.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:45,103 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestWebCoreModule, CashTest.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:45,104 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestApplicationModule, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:45,104 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestCoreModule, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:45,104 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:45,104 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:45,104 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:45,105 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:45,105 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.EntityFrameworkCore.CashTestEntityFrameworkModule, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:45,105 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:45,106 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:45,106 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:45,106 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:45,106 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:45,107 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:45,109 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2018-04-11 09:54:45,174 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:54:45,174 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:54:45,174 [1    ] o.Configuration.LanguageManagementConfig - Converted CashTest (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:54:45,174 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:54:45,496 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: CashTest.EntityFrameworkCore.CashTestDbContext, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:45,881 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-11 09:54:45,921 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-11 09:54:45,955 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-11 09:54:45,985 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CashTest
+DEBUG 2018-04-11 09:54:46,012 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-11 09:54:46,040 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-11 09:54:46,074 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2018-04-11 09:54:46,074 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-04-11 09:54:46,076 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.CreateUserDto
+DEBUG 2018-04-11 09:54:46,077 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.UserDto
+DEBUG 2018-04-11 09:54:46,077 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-11 09:54:46,077 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-11 09:54:46,077 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-11 09:54:46,077 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.PermissionDto
+DEBUG 2018-04-11 09:54:46,077 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.RoleDto
+DEBUG 2018-04-11 09:54:46,077 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-11 09:54:46,077 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.TenantDto
+INFO  2018-04-11 09:54:47,790 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Player/GetPlayers multipart/form-data; boundary=----WebKitFormBoundary7lT6128wiYrCg6ZP 333
+INFO  2018-04-11 09:54:47,803 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-11 09:54:47,805 [5    ] pNetCore.Cors.Infrastructure.CorsService - Request origin chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop does not have permission to access the resource.
+INFO  2018-04-11 09:54:47,943 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 170.4695ms 404 
+DEBUG 2018-04-11 09:54:59,765 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-11 09:54:59,791 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2018-04-11 09:54:59,825 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.Web.Host.Startup.CashTestWebHostModule, CashTest.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:59,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestWebCoreModule, CashTest.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:59,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestApplicationModule, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:59,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestCoreModule, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:59,828 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:59,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:59,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:59,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:59,829 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.EntityFrameworkCore.CashTestEntityFrameworkModule, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:59,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:59,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:59,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:59,830 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:59,831 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:59,831 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:54:59,833 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2018-04-11 09:54:59,898 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:54:59,898 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:54:59,898 [1    ] o.Configuration.LanguageManagementConfig - Converted CashTest (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:54:59,898 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 09:55:00,201 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: CashTest.EntityFrameworkCore.CashTestDbContext, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 09:55:00,619 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-11 09:55:00,657 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-11 09:55:00,692 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-11 09:55:00,709 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CashTest
+DEBUG 2018-04-11 09:55:00,738 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-11 09:55:00,769 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-11 09:55:00,811 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2018-04-11 09:55:00,812 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-04-11 09:55:00,815 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.CreateUserDto
+DEBUG 2018-04-11 09:55:00,815 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.UserDto
+DEBUG 2018-04-11 09:55:00,816 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-11 09:55:00,816 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-11 09:55:00,816 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-11 09:55:00,816 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.PermissionDto
+DEBUG 2018-04-11 09:55:00,816 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.RoleDto
+DEBUG 2018-04-11 09:55:00,816 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-11 09:55:00,816 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.TenantDto
+INFO  2018-04-11 09:55:03,558 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2018-04-11 09:55:04,396 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CashTest.Web.Host.Controllers.HomeController.Index (CashTest.Web.Host) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-11 09:55:04,514 [11   ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2018-04-11 09:55:04,518 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Web.Host.Controllers.HomeController.Index (CashTest.Web.Host) in 324.4094ms
+INFO  2018-04-11 09:55:04,525 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 990.4005ms 302 
+INFO  2018-04-11 09:55:04,534 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/  
+INFO  2018-04-11 09:55:04,553 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/index.html'. Physical path: 'N/A'
+INFO  2018-04-11 09:55:04,560 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25.4259ms 200 text/html
+INFO  2018-04-11 09:55:04,575 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/typography.css  
+INFO  2018-04-11 09:55:04,580 [14   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/typography.css was not modified
+INFO  2018-04-11 09:55:04,586 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.8305ms 304 text/css
+INFO  2018-04-11 09:55:04,608 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/screen.css  
+INFO  2018-04-11 09:55:04,610 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/screen.css was not modified
+INFO  2018-04-11 09:55:04,610 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.7203ms 304 text/css
+INFO  2018-04-11 09:55:04,613 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.slideto.min.js  
+INFO  2018-04-11 09:55:04,614 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.slideto.min.js was not modified
+INFO  2018-04-11 09:55:04,614 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.6304ms 304 application/javascript
+INFO  2018-04-11 09:55:04,615 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/reset.css  
+INFO  2018-04-11 09:55:04,616 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/object-assign-pollyfill.js  
+INFO  2018-04-11 09:55:04,616 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/reset.css was not modified
+INFO  2018-04-11 09:55:04,616 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.3738ms 304 text/css
+INFO  2018-04-11 09:55:04,617 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery-1.8.0.min.js  
+INFO  2018-04-11 09:55:04,617 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/object-assign-pollyfill.js was not modified
+INFO  2018-04-11 09:55:04,617 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.6455ms 304 application/javascript
+INFO  2018-04-11 09:55:04,617 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-1.8.0.min.js was not modified
+INFO  2018-04-11 09:55:04,618 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.0274ms 304 application/javascript
+INFO  2018-04-11 09:55:04,624 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.wiggle.min.js  
+INFO  2018-04-11 09:55:04,625 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.wiggle.min.js was not modified
+INFO  2018-04-11 09:55:04,626 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.8386ms 304 application/javascript
+INFO  2018-04-11 09:55:04,630 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.ba-bbq.min.js  
+INFO  2018-04-11 09:55:04,631 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.ba-bbq.min.js was not modified
+INFO  2018-04-11 09:55:04,631 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.4037ms 304 application/javascript
+INFO  2018-04-11 09:55:04,647 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/lodash.min.js  
+INFO  2018-04-11 09:55:04,647 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack.js  
+INFO  2018-04-11 09:55:04,647 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.min.js  
+INFO  2018-04-11 09:55:04,647 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/backbone-min.js  
+INFO  2018-04-11 09:55:04,648 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/backbone-min.js was not modified
+INFO  2018-04-11 09:55:04,648 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/lodash.min.js was not modified
+INFO  2018-04-11 09:55:04,648 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.1542ms 304 application/javascript
+INFO  2018-04-11 09:55:04,648 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/highlight.9.1.0.pack.js was not modified
+INFO  2018-04-11 09:55:04,648 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.3588ms 304 application/javascript
+INFO  2018-04-11 09:55:04,648 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.5064ms 304 application/javascript
+INFO  2018-04-11 09:55:04,649 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.min.js was not modified
+INFO  2018-04-11 09:55:04,650 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.0461ms 304 application/javascript
+INFO  2018-04-11 09:55:04,650 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/handlebars-4.0.5.js  
+INFO  2018-04-11 09:55:04,652 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/handlebars-4.0.5.js was not modified
+INFO  2018-04-11 09:55:04,653 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.7209ms 304 application/javascript
+INFO  2018-04-11 09:55:04,656 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/marked.js  
+INFO  2018-04-11 09:55:04,658 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/marked.js was not modified
+INFO  2018-04-11 09:55:04,658 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.3132ms 304 application/javascript
+INFO  2018-04-11 09:55:04,658 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jsoneditor.min.js  
+INFO  2018-04-11 09:55:04,660 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack_extended.js  
+INFO  2018-04-11 09:55:04,661 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jsoneditor.min.js was not modified
+INFO  2018-04-11 09:55:04,661 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.1977ms 304 application/javascript
+INFO  2018-04-11 09:55:04,661 [14   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/highlight.9.1.0.pack_extended.js was not modified
+INFO  2018-04-11 09:55:04,661 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.4876ms 304 application/javascript
+INFO  2018-04-11 09:55:04,664 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/swagger-oauth.js  
+INFO  2018-04-11 09:55:04,665 [14   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/swagger-oauth.js was not modified
+INFO  2018-04-11 09:55:04,665 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.4759ms 304 application/javascript
+INFO  2018-04-11 09:55:04,675 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/logo_small.png  
+INFO  2018-04-11 09:55:04,676 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /images/logo_small.png was not modified
+INFO  2018-04-11 09:55:04,676 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.4213ms 304 image/png
+INFO  2018-04-11 09:55:04,801 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/print.css  
+INFO  2018-04-11 09:55:04,802 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/print.css was not modified
+INFO  2018-04-11 09:55:04,803 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.514ms 304 text/css
+INFO  2018-04-11 09:55:04,932 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2018-04-11 09:55:05,232 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 299.3897ms 200 application/json
+INFO  2018-04-11 09:55:05,741 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js?_=1523411705736  
+INFO  2018-04-11 09:55:05,741 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/on-complete.js?_=1523411705737  
+INFO  2018-04-11 09:55:05,741 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\github\CashTest\aspnet-core\src\CashTest.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2018-04-11 09:55:05,741 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/on-complete.js'. Physical path: 'D:\github\CashTest\aspnet-core\src\CashTest.Web.Host\wwwroot\swagger\ui\on-complete.js'
+INFO  2018-04-11 09:55:05,742 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.9887ms 200 application/javascript
+INFO  2018-04-11 09:55:05,747 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.8365ms 200 application/javascript
+INFO  2018-04-11 09:55:22,062 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Player/GetPlayers multipart/form-data; boundary=----WebKitFormBoundaryjBagJSi2aQuXC1Up 333
+INFO  2018-04-11 09:55:22,065 [14   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-11 09:55:22,065 [14   ] pNetCore.Cors.Infrastructure.CorsService - Request origin chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop does not have permission to access the resource.
+INFO  2018-04-11 09:55:22,072 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.4347ms 404 
+INFO  2018-04-11 09:55:45,206 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Player/CreatePlayer multipart/form-data; boundary=----WebKitFormBoundarybP3ABo29Xi5VLQsN 333
+INFO  2018-04-11 09:55:45,207 [15   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-11 09:55:45,207 [15   ] pNetCore.Cors.Infrastructure.CorsService - Request origin chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop does not have permission to access the resource.
+INFO  2018-04-11 09:55:45,221 [15   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-11 09:55:45,221 [15   ] pNetCore.Cors.Infrastructure.CorsService - Request origin chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop does not have permission to access the resource.
+INFO  2018-04-11 09:55:45,360 [15   ] icrosoft.AspNetCore.Mvc.StatusCodeResult - Executing HttpStatusCodeResult, setting HTTP status code 415
+INFO  2018-04-11 09:55:45,360 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Player.PlayerAppService.CreatePlayer (CashTest.Application) in 139.3339ms
+INFO  2018-04-11 09:55:45,360 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 154.1341ms 415 
+INFO  2018-04-11 09:55:56,103 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/throbber.gif  
+INFO  2018-04-11 09:55:56,104 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /images/throbber.gif was not modified
+INFO  2018-04-11 09:55:56,104 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.4455ms 304 image/gif
+INFO  2018-04-11 09:56:15,455 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Player/CreatePlayer application/json 61
+INFO  2018-04-11 09:56:15,455 [11   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-11 09:56:15,455 [11   ] pNetCore.Cors.Infrastructure.CorsService - Request origin chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop does not have permission to access the resource.
+INFO  2018-04-11 09:56:15,460 [11   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-11 09:56:15,461 [11   ] pNetCore.Cors.Infrastructure.CorsService - Request origin chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop does not have permission to access the resource.
+INFO  2018-04-11 09:56:15,518 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CashTest.Player.PlayerAppService.CreatePlayer (CashTest.Application) with arguments (CashTest.Player.Dto.PlayerInput) - ModelState is Valid
+INFO  2018-04-11 09:56:15,548 [13   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-11 09:56:15,553 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Player.PlayerAppService.CreatePlayer (CashTest.Application) in 92.6111ms
+INFO  2018-04-11 09:56:15,554 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 99.38ms 200 application/json; charset=utf-8
+INFO  2018-04-11 09:56:45,021 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Player/GetPlayer?mapid=1  
+INFO  2018-04-11 09:56:45,022 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1.6512ms 404 
+INFO  2018-04-11 09:56:54,556 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Player/GetPlayers?mapid=1  
+INFO  2018-04-11 09:56:54,570 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) with arguments (CashTest.Player.Dto.GetPlayerInput) - ModelState is Valid
+ERROR 2018-04-11 09:56:54,637 [10   ] Mvc.ExceptionHandling.AbpExceptionFilter - Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[CashTest.Entities.Player, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[CashTest.Player.Dto.PlayerDto, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[CashTest.Entities.Player, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[CashTest.Player.Dto.PlayerDto, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+==========================================================
+Player -> PlayerDto (Destination member list)
+CashTest.Entities.Player -> CashTest.Player.Dto.PlayerDto (Destination member list)
+
+Unmapped properties:
+PlayerID
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at CashTest.Player.PlayerAppService.GetPlayers(GetPlayerInput input) in D:\github\CashTest\aspnet-core\src\CashTest.Application\Player\PlayerAppService.cs:line 38
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+INFO  2018-04-11 09:56:54,711 [10   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-11 09:56:54,713 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) in 151.4274ms
+INFO  2018-04-11 09:56:54,713 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 157.8786ms 500 application/json; charset=utf-8
+DEBUG 2018-04-11 13:04:25,577 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-11 13:04:25,690 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2018-04-11 13:04:25,719 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.Web.Host.Startup.CashTestWebHostModule, CashTest.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:04:25,722 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestWebCoreModule, CashTest.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:04:25,722 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestApplicationModule, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:04:25,722 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestCoreModule, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:04:25,722 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:04:25,723 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:04:25,723 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:04:25,723 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:04:25,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.EntityFrameworkCore.CashTestEntityFrameworkModule, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:04:25,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:04:25,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:04:25,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:04:25,725 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:04:25,725 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:04:25,725 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:04:25,728 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2018-04-11 13:04:25,794 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 13:04:25,794 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 13:04:25,794 [1    ] o.Configuration.LanguageManagementConfig - Converted CashTest (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 13:04:25,794 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 13:04:26,107 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: CashTest.EntityFrameworkCore.CashTestDbContext, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:04:26,520 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-11 13:04:26,561 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-11 13:04:26,595 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-11 13:04:26,612 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CashTest
+DEBUG 2018-04-11 13:04:26,638 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-11 13:04:26,665 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-11 13:04:26,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2018-04-11 13:04:26,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-04-11 13:04:26,706 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.CreateUserDto
+DEBUG 2018-04-11 13:04:26,707 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.UserDto
+DEBUG 2018-04-11 13:04:26,707 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-11 13:04:26,707 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-11 13:04:26,707 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-11 13:04:26,707 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.PermissionDto
+DEBUG 2018-04-11 13:04:26,707 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.RoleDto
+DEBUG 2018-04-11 13:04:26,707 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-11 13:04:26,707 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.TenantDto
+INFO  2018-04-11 13:04:28,341 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Player/GetPlayers?playername=cash  
+INFO  2018-04-11 13:04:29,130 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) with arguments (CashTest.Player.Dto.GetPlayerInput) - ModelState is Valid
+ERROR 2018-04-11 13:04:29,266 [6    ] Mvc.ExceptionHandling.AbpExceptionFilter - Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[CashTest.Entities.Player, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[CashTest.Player.Dto.PlayerDto, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[CashTest.Entities.Player, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[CashTest.Player.Dto.PlayerDto, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperConfigurationException: 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+==========================================================
+Player -> PlayerDto (Destination member list)
+CashTest.Entities.Player -> CashTest.Player.Dto.PlayerDto (Destination member list)
+
+Unmapped properties:
+PlayerID
+
+   at AutoMapper.ConfigurationValidator.AssertConfigurationIsValid(IEnumerable`1 typeMaps)
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , List`1 , List`1 , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at CashTest.Player.PlayerAppService.GetPlayers(GetPlayerInput input) in D:\github\CashTest\aspnet-core\src\CashTest.Application\Player\PlayerAppService.cs:line 29
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+INFO  2018-04-11 13:04:29,343 [6    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-11 13:04:29,364 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) in 403.0722ms
+INFO  2018-04-11 13:04:29,368 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1044.7786ms 500 application/json; charset=utf-8
+DEBUG 2018-04-11 13:05:01,933 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-11 13:05:01,959 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2018-04-11 13:05:01,987 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.Web.Host.Startup.CashTestWebHostModule, CashTest.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:05:01,990 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestWebCoreModule, CashTest.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:05:01,991 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestApplicationModule, CashTest.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:05:01,991 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.CashTestCoreModule, CashTest.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:05:01,991 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:05:01,992 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:05:01,992 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:05:01,992 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:05:01,993 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CashTest.EntityFrameworkCore.CashTestEntityFrameworkModule, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:05:01,993 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:05:01,993 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:05:01,993 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:05:01,993 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:05:01,994 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:05:01,994 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:05:01,997 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2018-04-11 13:05:02,064 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 13:05:02,064 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 13:05:02,064 [1    ] o.Configuration.LanguageManagementConfig - Converted CashTest (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 13:05:02,064 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-11 13:05:02,380 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: CashTest.EntityFrameworkCore.CashTestDbContext, CashTest.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-11 13:05:02,762 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-11 13:05:02,801 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-11 13:05:02,840 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-11 13:05:02,856 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CashTest
+DEBUG 2018-04-11 13:05:02,879 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-11 13:05:02,905 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-11 13:05:02,940 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2018-04-11 13:05:02,940 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-04-11 13:05:02,943 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.CreateUserDto
+DEBUG 2018-04-11 13:05:02,943 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Users.Dto.UserDto
+DEBUG 2018-04-11 13:05:02,943 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-11 13:05:02,943 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-11 13:05:02,943 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-11 13:05:02,944 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.PermissionDto
+DEBUG 2018-04-11 13:05:02,944 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.Roles.Dto.RoleDto
+DEBUG 2018-04-11 13:05:02,944 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-11 13:05:02,944 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CashTest.MultiTenancy.Dto.TenantDto
+INFO  2018-04-11 13:05:04,636 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Player/GetPlayers?playername=cash  
+INFO  2018-04-11 13:05:05,443 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) with arguments (CashTest.Player.Dto.GetPlayerInput) - ModelState is Valid
+INFO  2018-04-11 13:05:05,523 [12   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-11 13:05:05,545 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) in 260.5047ms
+INFO  2018-04-11 13:05:05,548 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 928.3057ms 200 application/json; charset=utf-8
+INFO  2018-04-11 13:06:09,464 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 PUT http://localhost:21021/api/services/app/Player/UpdatePlayer application/json 64
+INFO  2018-04-11 13:06:09,467 [15   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-11 13:06:09,467 [15   ] pNetCore.Cors.Infrastructure.CorsService - Request origin chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop does not have permission to access the resource.
+INFO  2018-04-11 13:06:09,473 [15   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-11 13:06:09,473 [15   ] pNetCore.Cors.Infrastructure.CorsService - Request origin chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop does not have permission to access the resource.
+INFO  2018-04-11 13:06:09,518 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CashTest.Player.PlayerAppService.UpdatePlayer (CashTest.Application) with arguments (CashTest.Player.Dto.PlayerInput) - ModelState is Valid
+INFO  2018-04-11 13:06:09,519 [15   ] CashTest.Player.PlayerAppService         -  update a playe for input CashTest.Player.Dto.PlayerInput
+INFO  2018-04-11 13:06:09,550 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-11 13:06:09,550 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Player.PlayerAppService.UpdatePlayer (CashTest.Application) in 77.4041ms
+INFO  2018-04-11 13:06:09,552 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 87.4012ms 200 application/json; charset=utf-8
+INFO  2018-04-11 13:06:15,474 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Player/GetPlayers?playername=cash  
+INFO  2018-04-11 13:06:15,481 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) with arguments (CashTest.Player.Dto.GetPlayerInput) - ModelState is Valid
+INFO  2018-04-11 13:06:15,488 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-11 13:06:15,488 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) in 10.3301ms
+INFO  2018-04-11 13:06:15,488 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14.3047ms 200 application/json; charset=utf-8
+INFO  2018-04-11 13:06:43,578 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 PUT http://localhost:21021/api/services/app/Player/UpdatePlayer application/json 64
+INFO  2018-04-11 13:06:43,578 [14   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-11 13:06:43,578 [14   ] pNetCore.Cors.Infrastructure.CorsService - Request origin chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop does not have permission to access the resource.
+INFO  2018-04-11 13:06:43,582 [14   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-11 13:06:43,582 [14   ] pNetCore.Cors.Infrastructure.CorsService - Request origin chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop does not have permission to access the resource.
+INFO  2018-04-11 13:06:43,586 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CashTest.Player.PlayerAppService.UpdatePlayer (CashTest.Application) with arguments (CashTest.Player.Dto.PlayerInput) - ModelState is Valid
+INFO  2018-04-11 13:06:43,586 [14   ] CashTest.Player.PlayerAppService         -  update a playe for input CashTest.Player.Dto.PlayerInput
+INFO  2018-04-11 13:06:43,594 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-11 13:06:43,594 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Player.PlayerAppService.UpdatePlayer (CashTest.Application) in 12.0681ms
+INFO  2018-04-11 13:06:43,594 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.3291ms 200 application/json; charset=utf-8
+INFO  2018-04-11 13:06:49,780 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Player/GetPlayers?playername=cash  
+INFO  2018-04-11 13:06:49,786 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) with arguments (CashTest.Player.Dto.GetPlayerInput) - ModelState is Valid
+INFO  2018-04-11 13:06:49,792 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-11 13:06:49,792 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Player.PlayerAppService.GetPlayers (CashTest.Application) in 8.6425ms
+INFO  2018-04-11 13:06:49,793 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12.6589ms 200 application/json; charset=utf-8

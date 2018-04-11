@@ -12,6 +12,6 @@ namespace CashTest.Player.Dto
 
     public class GetPlayersOutput
     {
-        public List<PlayerDto> Players { get; set; }
+        public IEnumerable<PlayerDto> Players { get; set; }
     }
 }

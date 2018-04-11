@@ -5,11 +5,10 @@ using Abp.Application.Services.Dto;
 
 namespace CashTest.Player.Dto
 {
-    public class PlayerDto //: EntityDto<int>
+    public class PlayerDto : EntityDto<long>
     {
         public PlayerDto()
         {
-            
         }
 
         public long PlayerID { get; set; }

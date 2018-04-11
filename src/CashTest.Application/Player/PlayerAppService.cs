@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Abp.Domain.Repositories;
 using Abp.UI;
@@ -27,7 +28,11 @@ namespace CashTest.Player
                 var playerEntityList = _playeRepository.GetAllList(a => a.PlayerName.Contains(input.PlayerName));
                 return new GetPlayersOutput
                 {
-                    Players = Mapper.Map<List<PlayerDto>>(playerEntityList)
+                    Players = playerEntityList.Select(a => new PlayerDto
+                    {
+                        PlayerID = a.Id,
+                        PlayerName = a.PlayerName
+                    })
                 };
             }
 
@@ -37,7 +42,11 @@ namespace CashTest.Player
 
                 return new GetPlayersOutput
                 {
-                    Players = Mapper.Map<List<PlayerDto>>(playerEntityList)
+                    Players = playerEntityList.Select(a => new PlayerDto
+                    {
+                        PlayerID = a.Id,
+                        PlayerName = a.PlayerName
+                    })
                 };
             }
 
