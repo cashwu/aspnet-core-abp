@@ -16,7 +16,4 @@
   <ItemGroup>
     <ProjectReference Include="..\CashTest.Core\CashTest.Core.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Player\Dto\" />
-  </ItemGroup>
 </Project>
