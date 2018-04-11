@@ -45,6 +45,11 @@ namespace CashTest.Tests
                 new TenantRoleAndUserBuilder(context, 1).Create();
             });
 
+            UsingDbContext(context =>
+            {
+                new PlayerAndMapBuilder(context).Create();
+            });
+
             LoginAsDefaultTenantAdmin();
         }
 
