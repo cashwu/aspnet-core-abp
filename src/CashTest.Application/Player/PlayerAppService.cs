@@ -28,14 +28,18 @@ namespace CashTest.Player
             Session = NullAbpSession.Instance;
         }
 
+        public GetPlayersOutput GetPlayer()
+        {
+            var result = _playeRepository.GetPlayersWithMap(0);
+
+            return new GetPlayersOutput();
+        }
+
         public GetPlayersOutput GetPlayers(GetPlayerInput input)
         {
             Logger.Info($" get player input :: {JsonConvert.SerializeObject(input)}");
             Logger.Info($" get player input :: {input}");
             Logger.Warn($"session :: {JsonConvert.SerializeObject(Session)}");
-
-
-
 
             if (!string.IsNullOrEmpty(input.PlayerName))
             {
@@ -76,8 +80,9 @@ namespace CashTest.Player
         {
             Logger.Info($" update a playe for input {input}");
 
-            var playerEntity = CacheManager.GetCache("player").Get(input.PlayerID, () => GetPlayerFromDb(input.PlayerID));
-            
+            var playerEntity = CacheManager.GetCache("player")
+                .Get(input.PlayerID, () => GetPlayerFromDb(input.PlayerID));
+
             //var playerEntity = _playeRepository.Get(input.PlayerID);
             if (playerEntity == null)
             {
