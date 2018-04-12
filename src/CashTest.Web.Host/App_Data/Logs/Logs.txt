@@ -4387,3 +4387,9 @@ INFO  2018-04-12 22:40:02,273 [6    ] soft.AspNetCore.Hosting.Internal.WebHost -
 INFO  2018-04-12 22:40:02,290 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/favicon-16x16.png  
 INFO  2018-04-12 22:40:02,292 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/favicon-16x16.png'. Physical path: 'N/A'
 INFO  2018-04-12 22:40:02,294 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.0242ms 200 image/png
+INFO  2018-04-12 23:07:10,266 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Player/GetPlayer  
+INFO  2018-04-12 23:07:10,434 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CashTest.Player.PlayerAppService.GetPlayer (CashTest.Application) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-12 23:07:10,440 [6    ] meworkCore.Repositories.PlayerRepository -  map id :: 0
+INFO  2018-04-12 23:07:10,489 [10   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-12 23:07:10,506 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CashTest.Player.PlayerAppService.GetPlayer (CashTest.Application) in 180.0118ms
+INFO  2018-04-12 23:07:10,506 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 242.2008ms 200 application/json; charset=utf-8
