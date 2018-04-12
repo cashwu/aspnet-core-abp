@@ -4,11 +4,11 @@ using Abp.Domain.Entities.Auditing;
 
 namespace CashTest.Entities
 {
-    public class Player : Entity<long>, IHasCreationTime
+    public class Player : CreationAuditedEntity<long>, ISoftDelete, IDeletionAudited
     {
         public const string DefaultPlayerName = "DefaultPlayer";
 
-        public DateTime CreationTime { get; set; }
+        //public DateTime CreationTime { get; set; }
 
         public virtual string PlayerName { get; set; }
 
@@ -18,9 +18,23 @@ namespace CashTest.Entities
 
         public Player()
         {
-            CreationTime = DateTime.Now;
+            //CreationTime = DateTime.Now;
             MapID = 1;
         }
 
+        public bool IsDeleted { get; set; }
+        public DateTime? DeletionTime { get; set; }
+        public long? DeleterUserId { get; set; }
     }
+
+    public class Player1 : AuditedEntity<long>
+    {
+
+    }
+
+    public class Player2 : FullAuditedEntity
+    {
+
+    }
+
 }
