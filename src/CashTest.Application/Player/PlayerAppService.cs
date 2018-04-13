@@ -1,13 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
+using Abp.Events.Bus;
+using Abp.Events.Bus.Handlers;
 using Abp.Runtime.Caching;
 using Abp.Runtime.Session;
 using Abp.UI;
 using AutoMapper;
+using CashTest.Authorization.Users;
 using CashTest.IRepositories;
 using CashTest.Player.Dto;
 using Microsoft.Extensions.Logging;
@@ -15,7 +20,7 @@ using Newtonsoft.Json;
 
 namespace CashTest.Player
 {
-    public class PlayerAppService : CashTestAppServiceBase, IPlayerAppService
+    public class PlayerAppService : CashTestAppServiceBase, IPlayerAppService, IEventHandler<TaskCompletedEventData>
     {
         private readonly IPlayerRepository _playeRepository;
         private readonly IUnitOfWorkManager _unitOfWorkManager;
@@ -24,11 +29,15 @@ namespace CashTest.Player
 
         public ICacheManager CacheManager { get; set; }
 
+        public IEventBus EventBus { get; set; }
+
         public PlayerAppService(IPlayerRepository playeRepository, IUnitOfWorkManager unitOfWorkManager)
         {
             _playeRepository = playeRepository;
             _unitOfWorkManager = unitOfWorkManager;
             Session = NullAbpSession.Instance;
+
+            EventBus = NullEventBus.Instance;
         }
 
         public GetPlayersOutput GetPlayer()
@@ -37,15 +46,32 @@ namespace CashTest.Player
 
             using (var unitOfWork = _unitOfWorkManager.Begin())
             {
-               //XXX
+                //XXX
                 unitOfWork.Complete();
                 _unitOfWorkManager.Current.Completed += (sender, args) => { /* TODO: 給派發的人發送郵件*/ };
+            }
+
+            var ev =EventBus.Register<TaskCompletedEventData>(e =>
+            {
+               // XXXX 
+            });
+            ev.Dispose();
+
+
+            using (_unitOfWorkManager.Current.DisableFilter(AbpDataFilters.SoftDelete))
+            {
+                // disable filter 
+            }
+
+            using (CurrentUnitOfWork.DisableFilter(AbpDataFilters.SoftDelete))
+            {
+                
             }
 
             return new GetPlayersOutput();
         }
 
-        [UnitOfWork(isTransactional:false, IsDisabled = false)]
+        [UnitOfWork(isTransactional: false, IsDisabled = false)]
         public GetPlayersOutput GetPlayers(GetPlayerInput input)
         {
             Logger.Info($" get player input :: {JsonConvert.SerializeObject(input)}");
@@ -128,5 +154,24 @@ namespace CashTest.Player
             };
             _playeRepository.Insert(playerEntity);
         }
+
+        public void HandleEvent(TaskCompletedEventData eventData)
+        {
+            // eventData
+        }
+    }
+    public class TaskEventData : EventData
+    {
+        public Task Task { get; set; }
+    }
+
+    public class TaskCreatedEventData : TaskEventData
+    {
+        public User CreatorUser { get; set; }
+    }
+
+    public class TaskCompletedEventData : TaskEventData
+    {
+        public User CompletorUser { get; set; }
     }
 }
