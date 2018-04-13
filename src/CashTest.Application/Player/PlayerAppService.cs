@@ -4,6 +4,7 @@ using System.Diagnostics.Tracing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Abp.Authorization;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.Events.Bus;
@@ -38,6 +39,17 @@ namespace CashTest.Player
             Session = NullAbpSession.Instance;
 
             EventBus = NullEventBus.Instance;
+        }
+
+        [AbpAuthorize()]
+        public void Auth()
+        {
+            if (PermissionChecker.IsGranted(""))
+            {
+
+            }
+            
+            PermissionChecker.Authorize("");
         }
 
         public GetPlayersOutput GetPlayer()
