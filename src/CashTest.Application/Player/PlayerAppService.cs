@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Abp.Domain.Repositories;
+using Abp.Domain.Uow;
 using Abp.Runtime.Caching;
 using Abp.Runtime.Session;
 using Abp.UI;
@@ -17,14 +18,16 @@ namespace CashTest.Player
     public class PlayerAppService : CashTestAppServiceBase, IPlayerAppService
     {
         private readonly IPlayerRepository _playeRepository;
+        private readonly IUnitOfWorkManager _unitOfWorkManager;
 
         public IAbpSession Session { get; set; }
 
         public ICacheManager CacheManager { get; set; }
 
-        public PlayerAppService(IPlayerRepository playeRepository)
+        public PlayerAppService(IPlayerRepository playeRepository, IUnitOfWorkManager unitOfWorkManager)
         {
             _playeRepository = playeRepository;
+            _unitOfWorkManager = unitOfWorkManager;
             Session = NullAbpSession.Instance;
         }
 
@@ -32,9 +35,17 @@ namespace CashTest.Player
         {
             var result = _playeRepository.GetPlayersWithMap(0);
 
+            using (var unitOfWork = _unitOfWorkManager.Begin())
+            {
+               //XXX
+                unitOfWork.Complete();
+                _unitOfWorkManager.Current.Completed += (sender, args) => { /* TODO: 給派發的人發送郵件*/ };
+            }
+
             return new GetPlayersOutput();
         }
 
+        [UnitOfWork(isTransactional:false, IsDisabled = false)]
         public GetPlayersOutput GetPlayers(GetPlayerInput input)
         {
             Logger.Info($" get player input :: {JsonConvert.SerializeObject(input)}");

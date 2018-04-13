@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Transactions;
 using Abp.AutoMapper;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
@@ -14,6 +15,11 @@ namespace CashTest
         public override void PreInitialize()
         {
             Configuration.Authorization.Providers.Add<CashTestAuthorizationProvider>();
+
+
+            Configuration.UnitOfWork.IsolationLevel = IsolationLevel.ReadCommitted;
+            Configuration.UnitOfWork.Timeout = TimeSpan.FromMinutes(30);
+
         }
 
         public override void Initialize()
